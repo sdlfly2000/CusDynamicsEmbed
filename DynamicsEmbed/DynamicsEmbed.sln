@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicsEmbed", "DynamicsEmbed\DynamicsEmbed.csproj", "{9F9E7C09-AD63-4E66-B643-40543A897AD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Presentation", "1-Presentation", "{625DB81E-1D69-4171-9515-E5B79E3676F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{193982F1-1916-4781-BCFE-62EDEF0BABAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Application", "2-Application", "{A3EB7A3C-D0B7-4BAC-B99E-1EE861ACD342}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{9CD29251-A996-4C89-BE71-6D5A569DCBF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infrasture", "4-Infrasture", "{F30FD3B0-B31A-4F03-87CE-80679EBA86BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{88FA9CB8-1A00-4FCE-B684-61F09C288D22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F9E7C09-AD63-4E66-B643-40543A897AD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F9E7C09-AD63-4E66-B643-40543A897AD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F9E7C09-AD63-4E66-B643-40543A897AD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F9E7C09-AD63-4E66-B643-40543A897AD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88FA9CB8-1A00-4FCE-B684-61F09C288D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88FA9CB8-1A00-4FCE-B684-61F09C288D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88FA9CB8-1A00-4FCE-B684-61F09C288D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88FA9CB8-1A00-4FCE-B684-61F09C288D22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F9E7C09-AD63-4E66-B643-40543A897AD6} = {625DB81E-1D69-4171-9515-E5B79E3676F1}
+		{88FA9CB8-1A00-4FCE-B684-61F09C288D22} = {193982F1-1916-4781-BCFE-62EDEF0BABAC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6D7B8B4-82E8-421A-88E8-7646582150B2}
+	EndGlobalSection
+EndGlobal
