@@ -6,7 +6,7 @@ using System;
 namespace DynamicsEmbed.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]/[action]")]
     public class UserInformationController : ControllerBase
     {
         private readonly IUserInformationGateway _userInformationGateway;
@@ -18,7 +18,7 @@ namespace DynamicsEmbed.Controllers
             _userInformationGateway = userInformationGateway;
         }
 
-        [HttpGet]
+        [HttpGet("{Id}")]
         public IActionResult GetById(string Id)
         {
             if (!ModelState.IsValid)
