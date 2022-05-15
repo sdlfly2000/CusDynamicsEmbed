@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicsEmbed", "DynamicsEmbed\DynamicsEmbed.csproj", "{9F9E7C09-AD63-4E66-B643-40543A897AD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicsEmbed", "DynamicsEmbed\DynamicsEmbed.csproj", "{9F9E7C09-AD63-4E66-B643-40543A897AD6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Presentation", "1-Presentation", "{625DB81E-1D69-4171-9515-E5B79E3676F1}"
 EndProject
@@ -13,9 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Application", "2-Applicat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{9CD29251-A996-4C89-BE71-6D5A569DCBF2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infrasture", "4-Infrasture", "{F30FD3B0-B31A-4F03-87CE-80679EBA86BA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infrastructure", "4-Infrastructure", "{F30FD3B0-B31A-4F03-87CE-80679EBA86BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{88FA9CB8-1A00-4FCE-B684-61F09C288D22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{88FA9CB8-1A00-4FCE-B684-61F09C288D22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra.OrganziationService", "Infra.OrganziationService\Infra.OrganziationService.csproj", "{99599331-E866-409E-976B-C11EEBEB4D1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{1292CCE4-531A-490E-8E85-72D92383A644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Services", "Domain.Services\Domain.Services.csproj", "{3F0F5E76-0EB8-4D6B-8284-CAA21C4A9BC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +37,18 @@ Global
 		{88FA9CB8-1A00-4FCE-B684-61F09C288D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88FA9CB8-1A00-4FCE-B684-61F09C288D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88FA9CB8-1A00-4FCE-B684-61F09C288D22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99599331-E866-409E-976B-C11EEBEB4D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99599331-E866-409E-976B-C11EEBEB4D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99599331-E866-409E-976B-C11EEBEB4D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99599331-E866-409E-976B-C11EEBEB4D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1292CCE4-531A-490E-8E85-72D92383A644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1292CCE4-531A-490E-8E85-72D92383A644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1292CCE4-531A-490E-8E85-72D92383A644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1292CCE4-531A-490E-8E85-72D92383A644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F0F5E76-0EB8-4D6B-8284-CAA21C4A9BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F0F5E76-0EB8-4D6B-8284-CAA21C4A9BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F0F5E76-0EB8-4D6B-8284-CAA21C4A9BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F0F5E76-0EB8-4D6B-8284-CAA21C4A9BC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +56,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9F9E7C09-AD63-4E66-B643-40543A897AD6} = {625DB81E-1D69-4171-9515-E5B79E3676F1}
 		{88FA9CB8-1A00-4FCE-B684-61F09C288D22} = {193982F1-1916-4781-BCFE-62EDEF0BABAC}
+		{99599331-E866-409E-976B-C11EEBEB4D1C} = {F30FD3B0-B31A-4F03-87CE-80679EBA86BA}
+		{1292CCE4-531A-490E-8E85-72D92383A644} = {9CD29251-A996-4C89-BE71-6D5A569DCBF2}
+		{3F0F5E76-0EB8-4D6B-8284-CAA21C4A9BC5} = {9CD29251-A996-4C89-BE71-6D5A569DCBF2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E6D7B8B4-82E8-421A-88E8-7646582150B2}

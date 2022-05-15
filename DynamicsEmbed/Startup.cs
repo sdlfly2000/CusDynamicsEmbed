@@ -32,7 +32,8 @@ namespace DynamicsEmbed
             services.AddMemoryCache();
             DIModule.RegisterDomain(services, new List<string>
             {
-                "Core"
+                "Core",
+                "Infra.OrganziationService"
             });
 
         }
