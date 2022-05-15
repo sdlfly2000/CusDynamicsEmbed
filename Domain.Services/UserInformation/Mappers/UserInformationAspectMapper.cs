@@ -6,7 +6,7 @@ using System;
 namespace Domain.Services.UserInformation.Mappers
 {
     [ServiceLocate(typeof(IUserInformationAspectMapper))]
-    internal class UserInformationAspectMapper : IUserInformationAspectMapper
+    public class UserInformationAspectMapper : IUserInformationAspectMapper
     {
         public IUserInformationAspect Map(CusUserInformationEntity entity)
         {

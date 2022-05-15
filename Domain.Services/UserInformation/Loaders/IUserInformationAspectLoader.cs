@@ -3,7 +3,7 @@ using System;
 
 namespace Domain.Services.UserInformation.Loaders
 {
-    internal interface IUserInformationAspectLoader
+    public interface IUserInformationAspectLoader
     {
         IUserInformationAspect LoadById(Guid Id);
     }

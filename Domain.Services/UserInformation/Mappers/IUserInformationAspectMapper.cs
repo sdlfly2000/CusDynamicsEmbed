@@ -3,7 +3,7 @@ using Infra.OrganziationService.Entities;
 
 namespace Domain.Services.UserInformation.Mappers
 {
-    internal interface IUserInformationAspectMapper
+    public interface IUserInformationAspectMapper
     {
         IUserInformationAspect Map(CusUserInformationEntity entity);
     }

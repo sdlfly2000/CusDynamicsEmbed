@@ -7,7 +7,7 @@ using System;
 namespace Domain.Services.UserInformation.Loaders
 {
     [ServiceLocate(typeof(IUserInformationAspectLoader))]
-    internal class UserInformationAspectLoader : IUserInformationAspectLoader
+    public class UserInformationAspectLoader : IUserInformationAspectLoader
     {
         private readonly IUserInformationAspectMapper _userInformaitonAspectMapper;
         private readonly ICusUserInformationRepository _cusUserInformationRepository;
