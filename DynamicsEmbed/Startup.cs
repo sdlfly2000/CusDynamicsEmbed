@@ -33,7 +33,8 @@ namespace DynamicsEmbed
             DIModule.RegisterDomain(services, new List<string>
             {
                 "Core",
-                "Infra.OrganziationService"
+                "Infra.OrganziationService",
+                "Domain.Services"
             });
 
         }
