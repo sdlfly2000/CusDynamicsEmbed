@@ -1,7 +1,7 @@
-﻿using Domain.UserInformation.Aspects;
+﻿using Domain.UserInformations.Aspects;
 using System;
 
-namespace Domain.UserInformation
+namespace Domain.UserInformations
 {
     public class UserInformation : IUserInformation
     {

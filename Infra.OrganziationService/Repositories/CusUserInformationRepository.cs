@@ -16,10 +16,10 @@ namespace Infra.OrganziationService.Repositories
             _organizationServiceAgent = organizationServiceAgent;
         }
 
-        public CusUserInformationEntity GetById(string Id)
+        public CusUserInformationEntity FindById(Guid Id)
         {
             var filterById = new FilterExpression();
-            filterById.AddCondition("crb51_cususerinformationid", ConditionOperator.Equal, Guid.Parse(Id));
+            filterById.AddCondition("crb51_cususerinformationid", ConditionOperator.Equal, Id);
 
             var response = _organizationServiceAgent.Execute(new RetrieveMultipleRequest
             {

@@ -1,6 +1,6 @@
-﻿using Domain.UserInformation.Aspects;
+﻿using Domain.UserInformations.Aspects;
 
-namespace Domain.UserInformation
+namespace Domain.UserInformations
 {
     public interface IUserInformation : IUserInformationAspect
     {

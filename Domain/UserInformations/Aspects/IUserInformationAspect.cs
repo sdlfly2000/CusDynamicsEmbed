@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Domain.UserInformation.Aspects
+namespace Domain.UserInformations.Aspects
 {
     public interface IUserInformationAspect
     {
