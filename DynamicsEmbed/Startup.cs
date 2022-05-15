@@ -28,13 +28,11 @@ namespace DynamicsEmbed
                 configuration.RootPath = "ClientApp/dist";
             });
 
-            services.AddLogging();
             services.AddMemoryCache();
             DIModule.RegisterDomain(services, new List<string>
             {
-                "Core",
-                "Infra.OrganziationService",
-                "Domain.Services"
+                "Domain.Services",
+                "Infra.OrganziationService"
             });
 
         }
