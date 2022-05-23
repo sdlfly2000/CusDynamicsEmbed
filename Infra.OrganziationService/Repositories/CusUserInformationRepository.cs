@@ -3,6 +3,7 @@ using Infra.OrganziationService.Entities;
 using Microsoft.Xrm.Sdk.Messages;
 using Microsoft.Xrm.Sdk.Query;
 using System;
+using System.Linq;
 
 namespace Infra.OrganziationService.Repositories
 {
@@ -36,9 +37,15 @@ namespace Infra.OrganziationService.Repositories
 
         private CusUserInformationEntity Map(RetrieveMultipleResponse response)
         {
-            return new CusUserInformationEntity
-            {
-            };
+            var recordResponse = response.EntityCollection.Entities.FirstOrDefault();
+            return recordResponse != null 
+                ? new CusUserInformationEntity
+                {
+                    CusUserInformationid = recordResponse.Id.ToString(),
+                    OwnerId = recordResponse.GetAttributeValue<string>("ownerid"),
+                    Name = recordResponse.GetAttributeValue<string>("crb51_name")
+                }
+                : new CusUserInformationEntity();
         }
 
         #endregion
