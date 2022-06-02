@@ -1,5 +1,6 @@
 ﻿using Common.Core.DependencyInjection;
 using Infra.OrganziationService.Entities;
+using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Messages;
 using Microsoft.Xrm.Sdk.Query;
 using System;
@@ -26,7 +27,8 @@ namespace Infra.OrganziationService.Repositories
             {
                 Query = new QueryExpression("crb51_cususerinformation") 
                 {
-                    Criteria = filterById
+                    Criteria = filterById,
+                    ColumnSet = new ColumnSet("ownerid", "crb51_name")
                 }                
             }) as RetrieveMultipleResponse;
 
@@ -42,7 +44,7 @@ namespace Infra.OrganziationService.Repositories
                 ? new CusUserInformationEntity
                 {
                     CusUserInformationid = recordResponse.Id.ToString(),
-                    OwnerId = recordResponse.GetAttributeValue<string>("ownerid"),
+                    OwnerId = recordResponse.GetAttributeValue<EntityReference>("ownerid").Id.ToString(),
                     Name = recordResponse.GetAttributeValue<string>("crb51_name")
                 }
                 : new CusUserInformationEntity();
